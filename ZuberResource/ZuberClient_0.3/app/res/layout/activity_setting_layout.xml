@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pinterest_backgroud">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/global_color">
+
+        <!-- 添加RelativeLayout 以增大用户点击返回的区域 -->
+        <RelativeLayout
+            android:id="@+id/setting_top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:paddingLeft="16dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/top_back_btn" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/set_tv"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/header_txt_of_setting"
+            android:textSize="@dimen/header_txt_size"
+            android:textStyle="bold"
+            android:textColor="@color/header_txt_color"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <Button
+            android:id="@+id/setting_loggout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_item_height"
+            android:text="@string/setting_txt_of_logout"
+            android:layout_marginTop="8dp"
+            android:textSize="17dp"
+            android:textColor="@color/setting_logout_btn"
+            android:background="@drawable/logout_btn_shape"/>
+
+    </LinearLayout>
+</LinearLayout>
+
